@@ -96,7 +96,7 @@
     }
 
     try {
-        $to  = $this->login_;
+        $pdo  = $this->login_;
 
         mail($to, $subject, $message, implode("\r\n", $headers));
     } catch (Exception  $error) {
